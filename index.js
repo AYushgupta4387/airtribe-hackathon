@@ -4,16 +4,18 @@ const { Pinecone } = require("@pinecone-database/pinecone");
 const express = require("express");
 const cors = require("cors"); // Import the cors package
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 const app = express();
 const port = 5000;
 
 const openai = new openAI({
-  apiKey:
-    "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 const pinecone = new Pinecone({
-  apiKey: "1341e5df-5f09-4cfe-a60b-d833eb8763da",
+  apiKey: process.env.PINECONE_API_KEY,
 });
 
 const pineconeIndexName = "redux-data";
