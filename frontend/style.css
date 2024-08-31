@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+body {
+  background-image: url("/frontend/onlygenie.jpeg"); /* Replace with your image URL */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Make the image cover the entire page */
+  background-position: center; /* Center the image */
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 20vh;
+  gap: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 10vh;
+}
+
+.board {
+  font-size: 6vh;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+#query {
+  width: 600px;
+  height: 64px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000019;
+  border-radius: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+#query::placeholder {
+  color: #000019;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgb(125, 46, 190);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.344);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-box {
+  width: 40%;
+  background-color: #333;
+  padding: 20px;
+  border-color: black;
+  border: 5px;
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #fff;
+  min-height: max(200px, fit-content);
+}
